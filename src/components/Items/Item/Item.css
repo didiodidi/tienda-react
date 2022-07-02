@@ -1,0 +1,12 @@
+
+
+.div-cart {
+	box-sizing: content-box;
+	padding: 10px;
+	border-radius: 8px;
+	width: 500px;
+	height: 300px;
+	box-shadow: .1px .1px 5px #999;
+	background-color: #F9F4F5;
+	cursor:default;
+}
