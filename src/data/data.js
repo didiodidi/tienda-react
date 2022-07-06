@@ -6,7 +6,7 @@ export const listadoProductos=[
         img:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c9598a1cf2924169888aa9810136e6d6_9366/Zapatillas_Grand_Court_Blanco_F36485_01_standard.jpg",		
         img2:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f8daa3996318420490c6a9810136ff67_9366/Zapatillas_Grand_Court_Blanco_F36485_02_standard_hover.jpg",
 		name:"Zapatillas Grand Court",
-		price:12499, 
+		price:13000, 
 		stock:10
 	},
 	{	id:2,
@@ -16,7 +16,7 @@ export const listadoProductos=[
 		img:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/449c838942da409f8ba9a97f00d3cffe_9366/Zapatillas_Runfalcon_Negro_F36199_01_standard.jpg",		
         img2:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ebac268f4d7e4e389006a97f00d3fbfb_9366/Zapatillas_Runfalcon_Negro_F36199_04_standard.jpg",
 		name:"Zapatillas RunFalcon",
-		price:11499, 
+		price:12000, 
 		stock:10
 	},
 		{ id:3,
@@ -26,7 +26,7 @@ export const listadoProductos=[
 		img:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fb35807a48ac4fd5b89aac7501578899_9366/Remera_SPRT_Estampada_Blanco_GN2428_21_model.jpg",		
         img2:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2b749e4aaa3b4bd597d0ac830184c8c7_9366/Remera_SPRT_Estampada_Blanco_GN2428_01_laydown.jpg",
 		name:"Remera sprt Estampada",
-		price:7499,
+		price:8000,
 		stock:8
 	},
 		{id:4,
@@ -36,7 +36,7 @@ export const listadoProductos=[
 		img:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ff058259bf8f4615a3ddab73012befc9_9366/Gorra_Beisbol_Vintage_Goofy_(UNISEX)_Negro_GD5509_01_standard.jpg",		
         img2:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ad4336e7024347c5b0acab7400b2e905_9366/Gorra_Beisbol_Vintage_Goofy_(UNISEX)_Negro_GD5509_42_detail.jpg",
 		name:"Gorra Beisbol Goofy",
-		price:7499,
+		price:7500,
 		stock:7
 	},
 			{id:5,
@@ -46,7 +46,7 @@ export const listadoProductos=[
 		img:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fcae6f5e2cdc41e390b9ad58009a1f53_9366/Remera_Adicolor_Classics_3_Tiras_Granate_H06774_21_model.jpg",		
         img2:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8fa2b0dd099a4994b083ad57010749d6_9366/Remera_Adicolor_Classics_3_Tiras_Granate_H06774_01_laydown.jpg",
 		name:" Remera Adicolor Classics 3 Tiras",
-		price:6999,
+		price:7000,
 		stock:8
 	},
 			{id:6,
@@ -56,7 +56,7 @@ export const listadoProductos=[
 		img:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2886d7608f5447c2b0e9ad030147350e_9366/Remera_Disney_Mickey_y_Amigos_Blanco_H22579_01_laydown.jpg",		
         img2:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2124814f40054bf2a845ad0301473bfa_9366/Remera_Disney_Mickey_y_Amigos_Blanco_H22579_02_laydown_hover.jpg",
 		name:"Remera Disney Mickey y Amigos",
-		price:5999,
+		price:6000,
 		stock:10,
 	}
 ]

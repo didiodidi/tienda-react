@@ -1,0 +1,9 @@
+.carrito-vacio{
+    width: 100%;
+    text-align: center;
+}
+
+.carrito-vacio h4{
+    margin-top: 40px;
+    font-size: 3rem;
+}

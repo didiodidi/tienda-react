@@ -14,6 +14,14 @@ export const CartContextProvider = ({children}) => {
         return cartItems.reduce( (total, item) => total + item.cantidad, 0 )
     }
     
+     function cartTotal(){
+      return cartItems.reduce( (total, item) => total + (item.cantidad * item.price), 0 )
+    }
+
+    function iva(){
+      return cartTotal()*0.2;
+    }
+    
 
     function addCart(item, cantidad) {
         if(cantidad === 0){
@@ -30,12 +38,13 @@ export const CartContextProvider = ({children}) => {
         }
       }
 
+    
+
       function isInCart(id){
-        return cartItems.some(e => e.id === id) // Me 
+        return cartItems.some(e => e.id === id) // Con some compruebo si es verdadero o falso
         
      }
 
-    
 
 
 console.log(cartItems)
@@ -51,7 +60,7 @@ console.log(cartItems)
 
     
     return (
-    <CartContext.Provider value={[cartItems, cantidadCarrito, addCart, removeItem, clear]}>
+    <CartContext.Provider value={[cartItems, cantidadCarrito, addCart, removeItem, clear, cartTotal, iva]}>
         {children}
     </CartContext.Provider>
     )

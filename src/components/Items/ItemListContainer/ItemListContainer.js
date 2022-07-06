@@ -7,6 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import "../ItemListContainer/ItemListContainer.css";
 import ItemCard from "../../Items/Item/ItemCard";
 import { getByCategory, getProductos } from "../../../data/data";
+import { getAllproductos } from "../../../firebase/firebaseFunciones";
 
 
 const ItemListContainer = () => {
@@ -17,13 +18,18 @@ const ItemListContainer = () => {
   
 
   useEffect(() => {
-    // axios("https://rickandmortyapi.com/api/character").then((res)=>
-    // setItems(res.data.results))
+    
     if(categoria === undefined){
       setItems(getProductos())
     }else{
       setItems(getByCategory(categoria))
     }
+
+    // getAllproductos(categoria)
+    //   .then(prod => {
+    //     setItems(prod)
+    //   })
+    //   .catch(error => console.log(error))
     
   
     
