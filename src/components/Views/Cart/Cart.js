@@ -8,6 +8,7 @@ import CartResumen from "../../CartResumen/CartResumen";
 import "../Cart/CartStyle.css";
 import "../../CartResumen/CartResumen.css";
 import CarritoVacio from "../../CarritoVacio/CarritoVacio";
+import ItemForm from "../../ItemForm/ItemForm"
 
 const Cart = ({ item }) => {
   const [cartItems, cantidadCarrito, addCart, removeItem, clear, cartTotal, iva] =
@@ -28,6 +29,7 @@ const Cart = ({ item }) => {
               {cartItems.map((item) => (
                 <CartItem key={item.id} item={item} />
               ))}
+              
             </div>
             <div className="cart-resumen">
               <div>
@@ -37,7 +39,7 @@ const Cart = ({ item }) => {
                 <h4>Total: ${cartTotal()+iva()}</h4>
               </div>
               <div className="btn-comprar">
-                <button>Comprar</button>
+              <ItemForm/>
                 <button onClick={clear}>Vaciar Carrito</button>
               </div>
             </div>

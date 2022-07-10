@@ -6,7 +6,6 @@ import { Link, useParams } from "react-router-dom";
 //Components
 import "../ItemListContainer/ItemListContainer.css";
 import ItemCard from "../../Items/Item/ItemCard";
-import { getByCategory, getProductos } from "../../../data/data";
 import { getAllproductos } from "../../../firebase/firebaseFunciones";
 
 
@@ -18,18 +17,12 @@ const ItemListContainer = () => {
   
 
   useEffect(() => {
-    
-    if(categoria === undefined){
-      setItems(getProductos())
-    }else{
-      setItems(getByCategory(categoria))
-    }
-
-    // getAllproductos(categoria)
-    //   .then(prod => {
-    //     setItems(prod)
-    //   })
-    //   .catch(error => console.log(error))
+  
+    getAllproductos(categoria)
+      .then(prod => {
+        setItems(prod)
+      })
+      .catch(error => console.log(error))
     
   
     
