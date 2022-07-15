@@ -15,8 +15,8 @@ const ItemList = ({data}) => {
         <Grid container>
           {data.map((item) => (
             <Grid key={item.id} item xs= {2} sm={4} md={4}>
-                <Box margin={3}>
-                  <ItemCard data={item} />
+                <Box margin={3} >
+                  <ItemCard data={item}/>
                 </Box>
             </Grid>
           ))}

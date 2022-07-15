@@ -42,16 +42,14 @@ const ItemListContainer = () => {
       {/* <ItemList data = {items} /> */}
       <div className="container">
 
-
        <Grid container>
         { items.length === 0 ? <p>Cargando............</p>  : items.map((item) => {
           return (
-            <Grid key={item.id} item xs={2} sm={4} md= {4}>
-              <Box margin={3}>
+            <Grid key={item.id} item xs={8} sm={4} md= {4}>
+              <Box margin={3} sx={{}}  >
                 <Link
                   to={`/item/${item.id}`}
-                  style={{ textDecoration: "none" }}
-                >
+                  style={{ textDecoration: "none" }}>
                   <ItemCard data={item} />
                 </Link>
               </Box>

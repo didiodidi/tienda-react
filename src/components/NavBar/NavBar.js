@@ -22,7 +22,7 @@ const NavBar = () => {
             
         
            
-           <div>
+           <div className="ul-li-container">
             <ul className="ul-li">
                 
                 <li> <Link to={`/`}>Home</Link></li>
@@ -40,7 +40,6 @@ const NavBar = () => {
                  
             </ul>
            </div>
-            
         </nav>
     );
 } ;

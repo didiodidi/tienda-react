@@ -19,7 +19,7 @@ import { CartContext } from '../../../context/CartContext';
   }
   return (
     <>
-
+  <div className="card-container">
     <Card sx={{ maxWidth: 345}}>
       <CardMedia
         component="img"
@@ -28,7 +28,7 @@ import { CartContext } from '../../../context/CartContext';
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div"  >
-          {`Nombres: ${name}`}
+          {`Nombre: ${name}`}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {`Precio: ${price}`}
@@ -36,13 +36,10 @@ import { CartContext } from '../../../context/CartContext';
         <Typography variant="body2" color="text.secondary">
           {`Descripcion: ${description}`}
         </Typography>
-
-
         <ItemCounter stock={stock} initial={1} onAdd={onAdd} />
-
       </CardContent>
     </Card>
-
+  </div>
     </>
   );
 }

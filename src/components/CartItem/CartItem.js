@@ -22,11 +22,13 @@ const CartItem = ({item}) => {
                 <h4>Precio unitario:${item.price}</h4>
                 <h4> <u>Cantidad de productos:</u><i>{item.cantidad}</i></h4>
                 <h4><u>Sub Total:</u> ${item.cantidad*item.price} </h4>
-                
+
             </div>
             
             {/* <h4>Subtotal: $<span>{item.price*item.cantidad}</span></h4> */}
-            <DeleteRoundedIcon className="content-cart-icon" onClick={removeHandler} />
+            <div>
+                <DeleteRoundedIcon className="content-cart-icon" onClick={removeHandler} />
+            </div>
             
         </div>
       
