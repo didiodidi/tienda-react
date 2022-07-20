@@ -9,13 +9,14 @@ import ItemListContainer from "./components/Items/ItemListContainer/ItemListCont
 import ItemDetailContainer from "./components/Views/ItemDetail/ItemDetailContainer";
 import Cart from "./components/Views/Cart/Cart";
 import { CartContextProvider } from "./context/CartContext";
+import Footer from "./components/Footer/Footer";
 // import { ItemsProvider } from "./context/CartContext";
 
 
 const App = () => {
   return (
     <CartContextProvider>
-        <div>
+    <div>
       <NavBar />
       <div>
         <div>
@@ -23,15 +24,6 @@ const App = () => {
             {/* <ItemListContainer/>  */}
           </div> 
 
-          {/* <div>
-            <ItemCounter
-              stock={10}
-              initial={1}
-              onAdd={(cantidadDeProductos) =>
-                console.log(`cantidadDeProductos: ${cantidadDeProductos}`)
-              }
-            />
-          </div> */}
             
             <Routes>
               <Route path='/' element={<ItemListContainer/>} />
@@ -42,6 +34,10 @@ const App = () => {
       
         </div>
       </div>
+      <div className="footer-container">
+        <Footer/>
+      </div>
+      
     </div>
 
 

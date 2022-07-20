@@ -11,8 +11,15 @@ const CartItem = ({item}) => {
 
     const removeHandler = () => {
         removeItem(item.id)
-        console.log("eliminar")
     }
+
+    const sumaHandler = () =>{
+        addCart(item, 1)
+    }
+    const restaHandler = () =>{
+        addCart(item, -1)
+    }
+
     return (
         <div className="content-cart">
         <img src={item.img} alt={item.name} />
@@ -20,12 +27,17 @@ const CartItem = ({item}) => {
                 <h4> <u>Nombre del producto:</u></h4>
                 <h4><i>{item.name}</i></h4>
                 <h4>Precio unitario:${item.price}</h4>
-                <h4> <u>Cantidad de productos:</u><i>{item.cantidad}</i></h4>
+                <div className="cantidad-container">
+                    <h4>Cantidad de productos:</h4>
+                    <button onClick={restaHandler}> - </button>
+                    <i>{item.cantidad}</i>
+                    <button onClick={sumaHandler}> + </button>
+                </div>
                 <h4><u>Sub Total:</u> ${item.cantidad*item.price} </h4>
 
             </div>
             
-            {/* <h4>Subtotal: $<span>{item.price*item.cantidad}</span></h4> */}
+            
             <div>
                 <DeleteRoundedIcon className="content-cart-icon" onClick={removeHandler} />
             </div>

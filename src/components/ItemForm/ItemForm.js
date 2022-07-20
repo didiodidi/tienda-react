@@ -36,13 +36,16 @@ export default function FormDialog() {
   const [alerta, setAlerta] = useState(false);
   const [buyer, setBuyer] = useState(initialState);
   const [idCompra, setIdCompra] = useState("");
+  const [error, setError] = useState(false);
   const handleClickOpen = () => {
     setOpen(true);
   };
 
   const handleClose = () => {
     setOpen(false);
-    clear();
+    if(idCompra !== "" ){
+      clear()
+    }
   };
 
   const handlerOnChange = (e) => {
@@ -50,12 +53,16 @@ export default function FormDialog() {
   };
 
   const handlerCompra = () => {
+    if(buyer.name === "" || buyer.direccion ==="" ||buyer.email===""){
+      setError(true)
+      return 
+    }
+
     let total = cartTotal();
     agregarCompra(buyer, cartItems, total).then((id) => {
         setBuyer(initialState)
         setIdCompra(id)
         setAlerta(true)
-        
     });
   };
 
@@ -66,8 +73,12 @@ export default function FormDialog() {
       </Button>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Ingresar datos de la compra</DialogTitle>
+        { error ?   <Alert variant="filled" severity="error">
+          Complete los campos incompletos
+        </Alert> : null }
         <DialogContent>
           <TextField
+            onFocus={()=>setError(false)}
             autoFocus
             margin="dense"
             id="name"
@@ -79,6 +90,7 @@ export default function FormDialog() {
             onChange={handlerOnChange}
           />
           <TextField
+            onFocus={()=>setError(false)}
             autoFocus
             margin="dense"
             id="telefono"
@@ -90,6 +102,7 @@ export default function FormDialog() {
             onChange={handlerOnChange}
           />
           <TextField
+            onFocus={()=>setError(false)}
             autoFocus
             margin="dense"
             id="direccion"
@@ -101,6 +114,7 @@ export default function FormDialog() {
             onChange={handlerOnChange}
           />
           <TextField
+            onFocus={()=>setError(false)}
             autoFocus
             margin="dense"
             id="name"
@@ -118,7 +132,7 @@ export default function FormDialog() {
         </DialogActions>
         {   
             alerta ? <Alert variant="filled" severity="success">
-                Compra realizada con exito ,su codigo de compra es : {idCompra}
+                Compra realizada con exito ,su codigo de compra es : <span style={{fontSize:"20px"}}>{idCompra}</span>
             </Alert> : null
         }
       </Dialog>

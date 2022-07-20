@@ -13,6 +13,7 @@ import ItemForm from "../../ItemForm/ItemForm"
 const Cart = ({ item }) => {
   const [cartItems, cantidadCarrito, addCart, removeItem, clear, cartTotal, iva] =
     useContext(CartContext);
+
   return (
     <div className="cart-container">
       {cartItems.length === 0 ? (
@@ -39,7 +40,9 @@ const Cart = ({ item }) => {
                 <h4>Total: ${cartTotal()+iva()}</h4>
               </div>
               <div className="btn-comprar">
-              <ItemForm/>
+                {
+                 cantidadCarrito() >0  ? <ItemForm/> : null
+                }
                 <button onClick={clear}>Vaciar Carrito</button>
               </div>
             </div>

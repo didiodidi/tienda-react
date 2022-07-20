@@ -19,7 +19,6 @@ export const getAllproductos = async (categoria) => {
       productos.push( {...doc.data(), id:doc.id} );     
     });
     
-    //console.log(productos)
 
     return productos;
 }

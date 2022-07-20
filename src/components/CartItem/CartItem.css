@@ -63,6 +63,14 @@ height: 30px!important;
 
 }
 
+.cantidad-container{
+    display: flex;
+    align-items: center;
+}
+.cantidad-container i{
+    margin: 0px 10px;
+}
+
 @media only screen and (min-width:320px) and (max-width:425px){
     .content-cart{
         box-sizing: content-box;
