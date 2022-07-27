@@ -19,12 +19,8 @@ const App = () => {
     <div>
       <NavBar />
       <div>
-        <div>
-          <div className = "container">
-            {/* <ItemListContainer/>  */}
-          </div> 
+        <div className="box-container">
 
-            
             <Routes>
               <Route path='/' element={<ItemListContainer/>} />
               <Route path='/category/:categoria' element={<ItemListContainer/>} />
@@ -33,11 +29,10 @@ const App = () => {
             </Routes>
       
         </div>
+        <div className="footer-container">
+          <Footer/>
+        </div>
       </div>
-      <div className="footer-container">
-        <Footer/>
-      </div>
-      
     </div>
 
 

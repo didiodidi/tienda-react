@@ -5,6 +5,7 @@ const Footer = () => {
     return (
         <div className="footer-main-container">
             <footer className="footer-container">
+                <div><i className="fa-brands fa-facebook"></i></div>
             </footer>
         </div>
     )

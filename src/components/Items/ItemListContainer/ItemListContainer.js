@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Box, Grid } from "@mui/material";
+import { Box, CircularProgress, Grid } from "@mui/material";
 import { Link, useParams } from "react-router-dom";
 
 
@@ -43,7 +43,7 @@ const ItemListContainer = () => {
       <div className="container">
 
        <Grid container>
-        { items.length === 0 ? <p>Cargando............</p>  : items.map((item) => {
+        { items.length === 0 ? <Box sx={{display:'flex', margin:'0 auto' ,alignItems:'center', height:'100vh'}}> <CircularProgress/> </Box>    : items.map((item) => {
           return (
             <Grid key={item.id} item xs={8} sm={4} md= {4}>
               <Box margin={3} sx={{}}  >
