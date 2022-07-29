@@ -1,8 +1,11 @@
 
-/* .item-content{
-	outline: 1px solid red;
-	
-} */
+.item-content{
+	/* outline: 1px solid red; */
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	min-height: 425px;
+}
 
 .div-cart {
 	box-sizing: content-box;

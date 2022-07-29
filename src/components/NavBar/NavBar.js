@@ -13,7 +13,10 @@ const NavBar = () => {
         <nav className="nav-container">
             <div className="logo">
             <Link to={`./`} style={{textDecoration: "none", color:"black"}} >
-                    <h1>Logo</h1>
+                
+                    <h1>Todo Deportes</h1> 
+                
+                    
             </Link>
            </div> 
            <div className="ul-li-container">

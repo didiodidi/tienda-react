@@ -11,7 +11,6 @@ function ItemCounter({ stock, initial, onAdd }) {
       setCount(count + 1);
     } else {
       alert("Limite de Items Alcanzados");
-      console.log("Limite Alcanzado");
     }
   };
   const decrement = () => {
@@ -19,14 +18,14 @@ function ItemCounter({ stock, initial, onAdd }) {
       setCount(count - 1);
     } else {
       alert("No puedes tener menos de 0 items");
-      console.log("Limite negativo alcanzado");
+      
     }
   };
 
   const addToCart = () => {
     if (stock > 0 && count > 0) {
       onAdd(count);
-      console.log(count);
+      
     }
   };
 

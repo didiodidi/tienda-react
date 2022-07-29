@@ -13,7 +13,6 @@ const ItemListContainer = () => {
   const [items, setItems] = useState([]);
 
   let {categoria} = useParams();
-  // console.log(genero)
   
 
   useEffect(() => {
@@ -40,13 +39,13 @@ const ItemListContainer = () => {
     <>
     
       {/* <ItemList data = {items} /> */}
-      <div className="container">
+      <div className="container, box-container">
 
        <Grid container>
-        { items.length === 0 ? <Box sx={{display:'flex', margin:'0 auto' ,alignItems:'center', height:'100vh'}}> <CircularProgress/> </Box>    : items.map((item) => {
+        { items.length === 0 ? <Box sx={{display:'flex', justifyContent:'center'}}><CircularProgress/></Box>  : items.map((item) => {
           return (
-            <Grid key={item.id} item xs={8} sm={4} md= {4}>
-              <Box margin={3} sx={{}}  >
+            <Grid key={item.id} item xs={12} sm={4} md= {4}>
+              <Box margin={5} sx={{justifyContent: 'center'}}  >
                 <Link
                   to={`/item/${item.id}`}
                   style={{ textDecoration: "none" }}>

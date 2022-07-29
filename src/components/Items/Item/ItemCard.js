@@ -27,9 +27,6 @@ import "../Item/Item.css"
         <Typography variant="body2" color="text.secondary">
           {`Precio: ${price}`}
         </Typography>
-        {/* <Typography variant="body2" color="text.secondary">
-          {`Descripcion: ${description}`}
-        </Typography> */}
       </CardContent>
     </Card>
     </div>

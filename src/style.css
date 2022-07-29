@@ -10,14 +10,11 @@
     
 }
 
-.footer-container{
-    display: flex;
-    align-items: flex-end;
-}
-
-.box-container{
+.main-content{
     /* outline: 1px solid red; */
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
 }
-
 
 

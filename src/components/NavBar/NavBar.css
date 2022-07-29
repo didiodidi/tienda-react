@@ -18,10 +18,12 @@ nav{
 }
 
 .logo{
+    position: relative;
+    margin-left: 20px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
-    width: 6%;
-
+    
 }
 
 .logo:hover{
@@ -102,6 +104,15 @@ button{
     .ul-li li{
         margin: 15px;
         list-style: none;
+    }
+
+    .logo{
+        position: relative;
+        margin-left: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        
     }
 
 }
