@@ -19,6 +19,7 @@ import { CartContext } from '../../../context/CartContext';
   }
   return (
     <>
+    
   <div className="card-container">
     <Card sx={{ maxWidth: 345}}>
       <CardMedia

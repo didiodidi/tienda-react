@@ -44,10 +44,7 @@ export const CartContextProvider = ({children}) => {
         return cartItems.some(e => e.id === id) // Con some compruebo si es verdadero o falso
         
      }
-
-
-
-console.log(cartItems)
+     
     function removeItem(itemId){
         setCartItems(cartItems.filter(item => item.id !== itemId))
     }

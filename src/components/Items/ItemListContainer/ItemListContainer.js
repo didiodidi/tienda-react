@@ -37,12 +37,10 @@ const ItemListContainer = () => {
 
   return (
     <>
-    
-      {/* <ItemList data = {items} /> */}
+      
       <div className="container, box-container">
-
        <Grid container>
-        { items.length === 0 ? <Box sx={{display:'flex', justifyContent:'center'}}><CircularProgress/></Box>  : items.map((item) => {
+        { items.length === 0 ? <Box sx={{}}><CircularProgress/></Box>  : items.map((item) => {
           return (
             <Grid key={item.id} item xs={12} sm={4} md= {4}>
               <Box margin={5} sx={{justifyContent: 'center'}}  >

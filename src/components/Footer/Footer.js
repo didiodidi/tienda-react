@@ -11,8 +11,9 @@ const Footer = () => {
         <div className="footer-main-container">
             <footer className="footer-container">
                 <div className="icon-container">
-                    <FacebookIcon/>
-                    <InstagramIcon/>
+                    <h2>Nuestras Redes. </h2>
+                    <FacebookIcon className="icon-fb"/>
+                    <InstagramIcon className="icon-ig"/>
                 </div>
             </footer>
         </div>

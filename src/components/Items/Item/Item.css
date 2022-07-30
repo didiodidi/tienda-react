@@ -1,6 +1,5 @@
 
 .item-content{
-	/* outline: 1px solid red; */
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -18,8 +17,17 @@
 	cursor:default;
 }
 
-.card-container{
-	height: 100vh;
+@media only screen and (min-width:425px) and (max-width:768px){
+
+	.card-container{
+		display: flex;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		transform: scale(0.9);
+		
+	}
+
+
 }
 
 
@@ -27,8 +35,11 @@
 @media only screen and (min-width:320px) and (max-width:375px){
 
 	.card-container{
-		width: 70%;
+		/* width: 100%; */
+		transform: scale(0.9);
 	}
+
+	
 
 	.btn-container{
 		position:relative;
@@ -37,5 +48,7 @@
 		align-items: center;
 		flex-direction: column;
 		transform: translateX(-16px);
+
+		
 	}
 }

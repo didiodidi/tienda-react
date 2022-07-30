@@ -29,18 +29,22 @@ const CartItem = ({item}) => {
                 <h4>Precio unitario:${item.price}</h4>
                 <div className="cantidad-container">
                     <h4>Cantidad de productos:</h4>
-                    <button onClick={restaHandler}> - </button>
-                    <i>{item.cantidad}</i>
-                    <button onClick={sumaHandler}> + </button>
+                    <div className="button-container">
+                        <button className="button" onClick={restaHandler}> - </button>
+                            <i>{item.cantidad}</i>
+                        <button className="button" onClick={sumaHandler}> + </button>
+                    </div>
+                    
                 </div>
                 <h4><u>Sub Total:</u> ${item.cantidad*item.price} </h4>
-
+                    <div className="delete-content">
+                        <h5>borrar producto: </h5>
+                        <DeleteRoundedIcon className="content-cart-icon" onClick={removeHandler} />
+                    </div>
             </div>
             
             
-            <div>
-                <DeleteRoundedIcon className="content-cart-icon" onClick={removeHandler} />
-            </div>
+            
             
         </div>
       
