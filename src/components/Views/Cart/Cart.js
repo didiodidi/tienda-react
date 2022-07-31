@@ -11,8 +11,7 @@ import CarritoVacio from "../../CarritoVacio/CarritoVacio";
 import ItemForm from "../../ItemForm/ItemForm"
 
 const Cart = ({ item }) => {
-  const [cartItems, cantidadCarrito, addCart, removeItem, clear, cartTotal, iva] =
-    useContext(CartContext);
+  const [cartItems, cantidadCarrito, addCart, removeItem, clear, cartTotal, iva] = useContext(CartContext);
 
   return (
     <div className="cart-container">
@@ -26,6 +25,7 @@ const Cart = ({ item }) => {
 
           {/* Cart total informacion total del producto y mandar los botones aca */}
           <div className="container-master">
+          
             <div className="cart-container-items">
               {cartItems.map((item) => (
                 <CartItem key={item.id} item={item} />
@@ -41,7 +41,7 @@ const Cart = ({ item }) => {
               </div>
               <div className="btn-comprar">
                 {
-                 cantidadCarrito() >0  ? <ItemForm/> : null
+                 cantidadCarrito() > 0  ? <ItemForm/> : null
                 }
                 <button onClick={clear}>Vaciar Carrito</button>
               </div>

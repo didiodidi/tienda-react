@@ -17,7 +17,12 @@ const CartItem = ({item}) => {
         addCart(item, 1)
     }
     const restaHandler = () =>{
-        addCart(item, -1)
+
+        if(item.cantidad > 1){
+            addCart(item, -1)
+        }
+        
+        
     }
 
     return (

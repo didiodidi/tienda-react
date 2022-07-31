@@ -8,7 +8,6 @@ const CartResumen = ({item}) => {
 
     const removeHandler = () => {
         removeItem(item.id)
-        console.log("eliminar")
     }
 
 
@@ -16,6 +15,7 @@ const CartResumen = ({item}) => {
     return(
         
         <div className="cart-extract-content">
+                
                 <h2>Resumen</h2>
                 <h4>Subtotal: $ {item.price*item.cantidad}</h4>
         </div>

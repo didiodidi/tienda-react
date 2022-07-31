@@ -30,7 +30,7 @@ export const CartContextProvider = ({children}) => {
     
         let existe = isInCart(item.id); 
         if(existe) {
-          let itemCart = cartItems.find(item => item.id === item.id);
+          let itemCart = cartItems.find(prod => prod.id === item.id);
           itemCart.cantidad +=  cantidad;
           setCartItems([...cartItems]);
         }else {

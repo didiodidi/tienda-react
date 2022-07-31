@@ -22,7 +22,7 @@
 	.card-container{
 		display: flex;
 		margin-top: 50px;
-		margin-bottom: 50px;
+		margin-bottom: 100px;
 		transform: scale(0.9);
 		
 	}
@@ -37,6 +37,7 @@
 	.card-container{
 		/* width: 100%; */
 		transform: scale(0.9);
+		margin-bottom: 50px;
 	}
 
 	
@@ -49,6 +50,13 @@
 		flex-direction: column;
 		transform: translateX(-16px);
 
+		
+	}
+}
+
+@media only screen and (min-width:375px) and (max-width:425px){
+	.card-container{
+		margin-bottom: 100px;
 		
 	}
 }
