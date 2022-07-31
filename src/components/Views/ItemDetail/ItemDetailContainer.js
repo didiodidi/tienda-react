@@ -14,15 +14,14 @@ const ItemDetailContainer = () => {
   const [item, setItem] = useState({});
 
   let { id } = useParams();
-  //console.log(id)
+  
   useEffect(() => {
-    // Llamar a la api
-   // setItem(getById(id));
+
     
     getProductosXId(id)
     .then(respuesta => setItem(respuesta))
   }, []);
-  //console.log("DATA:", item);
+  
   return (
     <>
     <div className="itemList-container">

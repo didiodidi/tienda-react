@@ -29,8 +29,6 @@ const ItemListContainer = () => {
       // setUsers: le paso a users toda la data de la API
   }, [categoria]);
 
-  // console.log(items);
-
 
   
   //if (items == null ) return <p>CARGANDO....</p>  //ACA VA EL SPINNER
@@ -39,11 +37,11 @@ const ItemListContainer = () => {
     <>
       
       <div className="container, box-container">
-       <Grid container>
-        { items.length === 0 ? <Box sx={{}}><CircularProgress/></Box>  : items.map((item) => {
+       <Grid container  >
+        { items.length === 0 ? <CircularProgress/>  : items.map((item) => {
           return (
-            <Grid key={item.id} item xs={12} sm={4} md= {4}>
-              <Box margin={5} sx={{justifyContent: 'center'}}  >
+            <Grid key={item.id} item xs={12} sm={4} md= {4} lg={4}>
+              <Box margin={9} >
                 <Link
                   to={`/item/${item.id}`}
                   style={{ textDecoration: "none" }}>

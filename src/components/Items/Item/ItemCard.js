@@ -14,6 +14,7 @@ import "../Item/Item.css"
   return (
     <>
     <div className="item-content">
+    <div>
     <Card sx={{ maxWidth: 345}}>
       <CardMedia
         component="img"
@@ -29,6 +30,7 @@ import "../Item/Item.css"
         </Typography>
       </CardContent>
     </Card>
+    </div>
     </div>
     </>
   );
